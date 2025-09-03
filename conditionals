@@ -1,0 +1,54 @@
+# score = int(input("whats your test score: "))
+
+# if (score > 100 or score < 0):
+#    print("hows that possible")
+# elif (score >= 90):
+#     print("You got an A")
+# elif(score >= 80):
+#     print("you got a B")
+# elif(score >=70):
+#     print("you got a c")
+# elif(score >=60):
+#     print("you got a d")
+# else:
+#     print("go to summer school you flunker")
+
+# grades = {"French": 100, "Math": 2, "Music":4, "Physics": 1}
+
+# grade = input("What grade are you looking for?") 
+
+# print(grades[grade])
+
+# a = 1
+# b = a 
+# c = b
+
+# b += 1
+
+# print(a)
+# print(b)
+# print(c)
+
+# numbers = [1, 20, 40, 600, 68, 76, 2, 5, 98]
+
+# for number in numbers : 
+#     if (number >= 50): 
+#         print(number)
+
+
+username = "b0b"
+password = "hiB0b"
+
+
+while (username ==  "b0b"):
+    input_username = input("Whats the username?")
+    if (input_username == username):
+        input_password = input("whats the password?")
+        if (input_password == password):
+            print("welcome b0b to your feetFinder accout")
+
+        else:
+            print("your password is wrong")
+    else:
+        print("Your username is wrong")
+        
