@@ -1,0 +1,6 @@
+list = [ help, me, please, I, beg, of, you, I, am, so, confused]
+def encrypt(message):
+    
+    
+
+def decrypt():
