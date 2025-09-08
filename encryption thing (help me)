@@ -39,7 +39,7 @@
 
 nums =[1, [2, [3, 4], 5], 6]
 
-#how you flatten a list?????
+#how you flatten a list????? 
 for number in nums:
     if nums(isinstance(nums, list)) == True:
         
