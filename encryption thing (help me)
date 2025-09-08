@@ -1,6 +1,23 @@
-list = [ help, me, please, I, beg, of, you, I, am, so, confused]
-def encrypt(message):
-    
-    
 
-def decrypt():
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+def encrypt(message, shift):
+    encrypted = []
+    for letter in message:
+        if letter in alphabet:
+            number = alphabet.index(letter)
+            new_letter = alphabet[(number+shift) % 26]
+            print(new_letter)
+            encrypted.append(new_letter)
+        else:
+            print(letter)
+    return("".join(encrypted))
+
+def decrypt(message, shift):
+    return encrypt(message, -shift)
+message = "werm people"
+print(message)
+encrypted = encrypt(message, 5)
+print(encrypted)
+decrypted = decrypt(encrypted, 5)
+print(decrypted) 
