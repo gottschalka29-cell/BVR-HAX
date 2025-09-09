@@ -1,0 +1,46 @@
+
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+# def encrypt(message, shift):
+#     encrypted = []
+#     for letter in message:
+#         if letter in alphabet:
+#             number = alphabet.index(letter)
+#             new_letter = alphabet[(number+shift) % 26]
+#             print(new_letter)
+#             encrypted.append(new_letter)
+#         else:
+#             print(letter)
+#     return("".join(encrypted))
+
+# def decrypt(message, shift):
+#     return encrypt(message, -shift)
+# message = "werm people"
+# print(message)
+# encrypted = encrypt(message, 5)
+# print(encrypted)
+# decrypted = decrypt(encrypted, 5)
+# print(decrypted) 
+
+# lambda function
+# numbers = [(2, 5), (4, 3), (2, 7), (3, 9), (4,2)]
+
+# answer = sorted(numbers, key=lambda x: x[1])
+
+# print(answer)
+
+#list refresher
+#nums = [0, 1, 2]
+# nums.extend[3, 4, 5])
+# print(nums)
+
+#print(nums.pop())
+#print(nums)
+
+nums =[1, [2, [3, 4], 5], 6]
+
+#how you flatten a list????? 
+for number in nums:
+    if nums(isinstance(nums, list)) == True:
+        
+        
