@@ -9,7 +9,7 @@ def lets_play(guesses):
     print(number)
     for i in range(guesses):
         print("Whats your guess?")
-        guess = input(int())
+        guess = int(input())
         print(guesses_used)
         if (int(guess) < number):
             print("Your answer is too low. Below is how many gueses you have left")
