@@ -50,25 +50,45 @@ class Shape(ABC):
         pass
 
     def print_all_info(self):
-        print("The perimter is" + str(self.get_perimiter()) + (". The area is " + (self.get_area)))
+        print("The perimeter is " + str(self.get_perimeter()) + (". The area is " + str(self.get_area())))
 
 class Square(Shape):
-    def __init__(self):
-        self.number = 4
-        self.number2 = 4
+    number = 4
+    number2 = 4
+    new_number = 0
     def get_perimeter(self):
-        self.number += self.number2
+        self.number += self.number2 *2
         return self.number
     def get_area(self):
-        self.number *= self.number2 
-        return self.number 
+        self.new_number = self.number * self.number2 
+        return self.new_number
     
 
 class Rectangle(Shape):
-    pass
+    number = 2
+    number2 = 8
+    new_number = 0
+    def get_perimeter(self):
+        self.number += self.number2 *2
+        return self.number
+    def get_area(self):
+        self.new_number = self.number * self.number2 
+        return self.new_number
 
 class Triangle(Shape):
-
-    pass 
-S = Square(Shape)
+    number = 4
+    new_number = 0 
+    def get_perimeter(self):
+        self.number * 3 
+        return self.number
+    def get_area(self):
+        self.new_number = self.number + self.number / 2 
+        return self.new_number
+    
+S = Square()
 S.print_all_info()
+
+r = Rectangle()
+r.print_all_info()
+t = Triangle()
+t.print_all_info()
