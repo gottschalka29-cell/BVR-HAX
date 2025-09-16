@@ -64,8 +64,8 @@ class Square(Shape):
         return self.new_number
     
 
-class Rectangle(Shape):
-    number = 2
+class Rectangle(Shape): 
+    number = 2 
     number2 = 8
     new_number = 0
     def get_perimeter(self):
